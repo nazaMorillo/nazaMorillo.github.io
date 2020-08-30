@@ -1,0 +1,642 @@
+/* ------------------------- */
+/* Estilos Generales */
+/* ------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+    /* box-shadow: 0px 0px 1px red; */
+}
+body{
+    position: absolute;
+}
+.construccion{
+    width: 100%!important; 
+    position: relative;    
+    bottom: 50%;
+   
+}
+.construccion > h2{
+     
+    transform: rotate(-5deg);
+    border: 5px dashed orange;      
+    background-color: red!important;
+    color: #fff!important;
+}
+
+body { 
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.texto-naranja {
+    font-weight: 300;
+    color: orange;
+}
+
+.texto-blanco {
+    font-weight: 700;
+    color: #fff;
+}
+
+.texto-negro {
+	color: #000;
+}
+
+/* ------------------------- */
+/* Clases de Fullpage */
+/* ------------------------- */
+
+#fp-nav ul li a span {
+    background: orange;
+}
+
+#fp-nav ul li .fp-tooltip {
+    color: orange;
+}
+
+/* ------------------------- */
+/* Menú de navegación */
+/* ------------------------- */
+
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 70;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.nav li,
+.nav a {
+    display: inline-block;
+    margin: 10px;
+    color: #c2c2c2;
+    transition: .5s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav >.menu> li.active {
+    border-bottom: 2px solid orange; 
+}
+
+.menu li a {
+    transition: .5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li.active a,
+.menu li a:hover  {
+    color: orange;
+}
+
+/* ------------------------- */
+/* Header */
+/* ------------------------- */
+ .header {
+     /* background: url('../media/bg-imagen.jpeg'); */
+     background-position: center;
+ }
+
+ .header .contenedor-perfil {
+     text-align: left;
+     position: relative;
+     z-index: 99;
+     display: flex;
+     justify-content: center;
+ }
+
+ .header .contenedor-perfil .img .avatar {
+    width: 50Vh; /* width of container */
+    height: 50vh;
+    border-radius: 5px;
+    box-shadow: -10px 0px 10px 5px black;
+    object-fit: cover;
+    /* object-position: 20% 10px;  */
+ }
+
+ .header .contenedor-perfil .datos {
+    padding: 0.8em;
+    text-align: left!important;
+ }
+
+  .header .contenedor-perfil .datos .descripcion >h2{
+    text-align: left;
+ }
+
+ .header .nombre {
+     text-align: left!important;
+     font-size: 40px;
+     text-transform: uppercase;
+ }
+
+ .header .contenedor-icono {
+     position: absolute;
+     z-index: 99999;
+     bottom: 3%;
+     left: 50%;
+     font-size: 40px;
+     animation: bajar-subir 1s ease infinite;
+ }
+
+.header .contenedor-icono a>i {
+    text-shadow: 0px 0px 10px #000;
+ }
+
+ .bg-video {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    background-position: center;
+    background-size: contain;
+    object-fit: cover;
+ }
+
+ section, footer {
+     padding-top: 2rem;
+ }
+
+ .cursor{
+	-webkit-animation-name: parpadeo;
+	-webkit-animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+
+/* ------------------------- */
+/* Animaciones */
+/* ------------------------- */
+ @keyframes bajar-subir {
+     0% {transform: translateY(20px);}
+     25% {transform: translateY(0px);}
+     100% {transform: translateY(20px);}
+ }
+
+ @keyframes parpadeo {
+	0%{opacity: 0; }
+	50%{opacity: 1; }
+	100%{opacity: 0; }
+}
+
+@-webkit-keyframes parpadeo {
+	0%{opacity: 0; }
+	50%{opacity: 1; }
+	100%{opacity: 0; }
+}
+
+ /* ------------------------- */
+/* Habilidades */
+/* ------------------------- */
+
+:root {
+  --bgColor-skillDev: #333;
+  --bgColor-skillTest: #00ab00;
+  --bgColor-skillAuto: blue;
+}
+
+.habilidades article {
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* ------------------------- */
+/* halilidades */
+/* ------------------------- */
+
+.habilidades .grilla{
+    margin: 0 30px;
+}
+
+.habilidades .grilla::before {
+    content: "";
+    height: 50px;
+    width: 2px;
+    display: inline-block;
+    background: orange;
+    position: absolute;
+    top: 50%;
+    margin: -10px;
+}
+
+.slide h1 {
+    margin: 1em auto;
+    text-transform: uppercase;
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.progress,
+.progress>.skill,
+.progress>.percent {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.progress>.skill,
+.progress>.percent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+}
+
+.progress {    
+    margin: auto;
+    background: linear-gradient(
+        0deg, 
+        #fff 50%, 
+        rgba(255,255,255,.5)50%
+        );
+    position: relative;
+}
+
+.progress>.skill {
+    text-transform: uppercase;
+    background: #555 content-box;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    line-height: 6rem;
+}
+
+.progress>.percent {    
+    background: linear-gradient(
+        transparent 50%,
+        #555 50%
+    );
+    line-height: 11rem;
+}
+
+.progress>.percent::after {
+    content: "%";
+}
+/* .progress {
+    transform: rotate(0deg);
+    
+}
+.progress>.skill {
+    transform: rotate(-0deg);
+}
+
+.progress>.percent {
+    transform: scale(1.1) rotate(-0deg);
+} */
+
+/* ------------------------- */
+/* Portafolio */
+/* ------------------------- */
+.proyectos {
+    margin-top: 100px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.proyecto {
+    width: 6em;
+    height: 6em;
+    background-color: #222;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.proyecto::after {
+    content: "Proyecto";
+    text-align: center;
+    color: #333;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -30px;
+    
+}
+
+/* ------------------------- */
+/* Clases de fullpage.js -Flechas de Slide */
+/* ------------------------- */
+
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev {
+    top: 95%;
+}
+
+.fp-controlArrow.fp-prev {
+    left: 80%;
+    border-width: 20px 20px 20px 0;
+    /* border-color: transparent #000 transparent transparent; */
+}
+
+.fp-controlArrow.fp-next {
+    right: 50px;
+    border-width: 20px 0 20px 20px ;
+    /* border-color: transparent  transparent transparent #000; */
+}
+
+/* ------------------------- */
+/* Footer */
+/* ------------------------- */
+
+.footer .texto-naranja {
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.footer > .texto-naranja {
+    opacity: 0;
+    font-family: 'Oswald', sans-serif;
+    transition: .5s ease all;
+}
+
+.footer .redes-sociales {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 50px;
+}
+
+.footer .redes-sociales a {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    color: #30313A;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin: 0 20px;
+}
+
+.footer .github i { color: #111; }
+.footer .linkedin i { color: #1da1f2; }
+.footer .whatsapp i { color: #36d653; }
+
+.footer .github:hover { background: #111; }
+.footer .linkedin:hover { background: #1da1f2; }
+.footer .whatsapp:hover { background: #36d653; }
+
+.footer .github:hover i{ color: #fff; }
+.footer .linkedin:hover i{ color: #fff; }
+.footer .whatsapp:hover i{ color: #fff; }
+
+
+.footer form>.btn:focus,
+.footer form>.input:focus { 
+    outline: none;
+    /* border: solid #5B6DCD 10px; */
+    box-shadow: 0px 0px 5px 1px #1da1f2;
+    box-sizing: border-box;
+}
+
+* {
+    transition: .8s ease;
+}
+
+.footer form {
+    max-width: 600px;
+    margin: 2em auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+        'nombre apellido'
+        'email email'
+        'mensaje mensaje'
+        'borrar enviar'
+    ;
+    /* grid-template-columns: 1fr 1fr 2fr; */
+}
+
+.footer form>.input {
+    padding-left: 1.5em;
+}
+
+.footer form>.btn{
+    /* line-height: 3em; */
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    transition: .8s ease;
+}
+
+.footer form>.input ,
+.footer form>.btn{
+    border-radius: 20px;
+}
+
+.footer form> input {
+    line-height: 2em;
+    text-transform: uppercase;    
+}
+
+.footer form>input[name="nombre"] {
+    grid-area: nombre;
+}
+.footer form>input[name="apellido"] {
+    grid-area: apellido;
+    
+}
+.footer form>input[name="email"] {
+    grid-area: email;   
+}
+
+.footer form>textarea {
+    grid-area: mensaje;
+}
+
+.footer form #borrar {
+    grid-area: borrar;
+    background-color: #1da1f2;
+}
+
+.footer form #enviar {
+    grid-area: enviar;
+    background-color: #36d653;
+}
+
+.footer form>#borrar:hover{
+   background-color: #fff;
+   color: #1da1f2;
+}
+
+.footer form>#enviar:hover{
+   background-color: #fff;
+   color: #36d653;
+}
+
+/* ------------------------- */
+/* Mediaqueries */
+/* ------------------------- */
+
+@media screen and (max-width: 768px) {
+
+    .construccion > h2{
+        padding-left: 25%!important;
+        font-size: 25px;
+    }
+    .menu li a,
+    .menu li.active a {
+        font-size: 18px;
+    }
+
+    .header .contenedor-perfil .img .avatar {
+        width: 100%;        
+    }
+
+    .header .nombre {
+        font-size: 25px;
+    }
+    .header .descripcion {
+        font-size: 14px;
+    }
+
+    .progress,
+    .progress>.skill,
+    .progress>.percent {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .progress>.skill {
+        /* font-size: 2vw!important; */
+        line-height: 4rem;
+    }
+
+    .progress>.percent {
+        line-height: 9rem;
+    }
+
+    .proyecto {
+        width: 4em;
+        height: 4em;
+    }
+
+    .footer > .texto-naranja {
+        font-size: 15px;
+    }
+    .footer .redes-sociales {
+        font-size: 30px;
+    }
+    .footer .redes-sociales a {
+        width: 70px;
+        height: 70px;
+    }
+
+    .footer .texto-naranja {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .construccion > h2{
+        padding-left: 20%;
+        font-size: 24px;
+    }
+    .header .titulo {
+        font-size: 60px;
+    }
+
+    .header .contenedor-perfil {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+    }
+
+    .header .avatar {
+        margin-top: 22px;       
+    }
+
+    .header .nombre {
+        font-size: 18px;
+    }
+    .header .descripcion {
+        font-size: 12px;
+    }
+
+    .fp-controlArrow.fp-prev {
+        left: 25px;
+    }
+    .fp-controlArrow.fp-next {
+        left: 100px;
+    }
+    .progress,
+    .progress>.skill,
+    .progress>.percent {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .progress>.skill {
+        /* font-size: 2vw!important; */
+        line-height: 2rem;
+    }
+
+    .progress>.percent {
+        line-height: 7rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .construccion > h2{
+        padding-left: 15%;
+        font-size: 20px;
+    }
+    .nav {
+        display: block;
+        text-align: center;
+    }
+    .nav a {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .menu {
+        display: flex;
+        justify-content: space-between; 
+    }
+    .menu li a,
+    .menu li.active a {
+        font-size: 15px;
+        padding: 5px;
+    }
+    .titulo {
+        font-size: 45px;
+    }
+    .apartados .modelo {
+        font-size: 30px;
+    }
+    .footer .texto-naranja {
+        font-size: 18px;
+    }
+    .footer .redes-sociales a {
+        width: 50px;
+        height: 50px;
+    }
+}

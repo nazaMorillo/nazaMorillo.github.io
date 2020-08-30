@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" href="media/avatar/favicon.jpg" type="image/gif" sizes="45x45"> 
+	<title>Nazareno Morillo</title>
+	<!-- <script src="js/fontawesome.js"  crossorigin="anonymous"></script> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Oswald&display=swap" rel="stylesheet"> -->
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css"> -->
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css"> -->
+
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<link href="css/fonts.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/fullpage.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+	<nav class="nav">
+		<a href="#inicio" class="marca"><code><\></code></a>
+		<ul id="menu" class="menu">
+			<li data-menuanchor="inicio" class="active">
+				<a href="#inicio">Inicio</a>
+			</li>
+			<li data-menuanchor="habilidades">
+				<a href="#habilidades">Habilidades</a>
+			</li>
+			<li data-menuanchor="portafolio">
+				<a href="#portafolio">Portafofio</a>
+			</li>
+			<li data-menuanchor="contacto">
+				<a href="#contacto">Contacto</a>
+			</li>
+		</ul>
+	</nav>
+
+	<main id="fullpage">
+		<header class="section header">
+			<div class="contenedor-perfil">
+				<div class="img">
+					<!-- <video  class="avatar" autoplay loop src="media/avatar/glich-img.mp4"></video> -->
+					<img class="avatar" src="media/avatar/avatar.jpg" alt="Nazareno Morillo">
+				</div>
+
+				<div class="datos">
+					<div class="nombre">
+						<h1><span class="texto-naranja">Nazareno</span>
+						<span class="texto-negro">Morillo</span></h1>	
+					</div>
+					<div class="descripcion">
+						<h2>Analista Tester Semi senior</h2>
+						<h2>Analista Tester en Automatización</h2>
+						<h2>Ténico superior en Desarrollo de software</h2>						
+						<h2>Desarrollador Web Full Stack<span class="cursor">|</span></h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="contenedor-icono">
+				<p><a href="#habilidades" class="texto-blanco icono"><i class="fas fa-chevron-down"></i></a></p>
+			</div>
+
+			<!-- video -->
+			<!-- <video loop muted data-autoplay class="bg-video">
+				<source src="media/bg-video.m4v" type="video/mp4">
+			</video> -->
+		</header>
+
+		<section class="section habilidades">
+
+			<template id="circular-progress">
+				<div class="progress">
+					<div class="skill"></div>
+					<div class="percent"></div>
+				</div>
+			</template>
+
+			<article class="slide desarrollo">
+				<h1  class="texto-blanco">Habilidades en Desarrollo</h1>					
+				<div class="grilla"  id="habilidades-desarrollo"></div>
+			</article>
+
+			<article class="slide testing">					
+				<h1  class="texto-blanco">Habilidades en Testing</h1>				
+				<div class="grilla"  id="habilidades-testing"></div>
+			</article>
+
+			<article class="slide automation">				
+				<h1  class="texto-blanco">Habilidades en automatización</h1>				
+				<div class="grilla"  id="habilidades-automation"></div>
+			</article>
+			<div class="contenedor-icono">
+				<p><a href="#habilidades" class="texto-blanco icono"><i class="fas fa-chevron-down"></i></a></p>
+			</div>
+		</section>
+		
+
+		<section class="section potafolio">
+			<!-- <h1  class="texto-negro">Portafolio</h1> -->
+			<div class="proyectos">
+				<div class="proyecto">					
+				</div>
+				<div class="proyecto">					
+				</div>
+				<div class="proyecto">					
+				</div>
+				<div class="proyecto">					
+				</div>
+				<div class="proyecto">					
+				</div>
+				<div class="proyecto">					
+				</div>
+				<div class="proyecto">					
+				</div>
+				<div class="proyecto">					
+				</div>
+				<div class="proyecto">					
+				</div>
+			</div>
+
+			<div class="contenedor-icono">
+				<p><a href="#habilidades" class="texto-blanco icono"><i class="fas fa-chevron-down"></i></a></p>
+			</div>
+			<div class="construccion">
+				<h2>EN CONSTRUCCIÓN</h2>
+			</div>
+		</section>
+
+
+		<footer class="section footer">
+			<h2 class="texto-naranja">Mis Redes Sociales</h2>
+			
+			<p class="redes-sociales">
+				<a href="#" class="github"><i class="fab fa-github-square"></i></a>
+				<a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+				<a href="#" class="whatsapp"><i class="fab fa-whatsapp-square"></i></a>
+			</p>
+
+			<form action="">
+				<input type="text" name="nombre" class="input" placeholder="Nombre">
+				<input type="text" name="apellido"" class="input" placeholder="Apellido">
+				<input type="email" name="email" class="input" placeholder="e-mail">
+				<textarea name="mensaje" class="input" cols="30" rows="10"></textarea>
+				<input type="button" id="borrar" class="btn" value="Borrar">
+				<input type="button" id="enviar" class="btn" value="Enviar">
+			</form>
+			<div class="construccion">
+				<h2>EN CONSTRUCCIÓN</h2>
+			</div>
+
+		</footer>
+		
+	</main>
+
+	<script src="js/fullpage.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script> -->
+	<script src="js/fullpage-setting.js"></script>
+	<script src="js/circular-progress.js"></script>
+</body>
+
+</html>
