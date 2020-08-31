@@ -15,11 +15,10 @@ body{
     width: 100%!important; 
     position: relative;    
     bottom: 50%;
+    transform: rotate(-5deg);
    
 }
-.construccion > h2{
-     
-    transform: rotate(-5deg);
+.construccion > h2{   
     border: 5px dashed orange;      
     background-color: red!important;
     color: #fff!important;
@@ -169,8 +168,8 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
  }
 
- section, footer {
-     padding-top: 2rem;
+section > .fp-slidesContainer, footer {
+     padding-top: 4.5rem;
  }
 
  .cursor{
@@ -318,21 +317,29 @@ h1, h2, h3, h4, h5, h6 {
 .proyecto {
     width: 6em;
     height: 6em;
-    background-color: #222;
+    /* background-color: #00a196; */
+    background-color: #ccc;
     border-radius: 50%;
     margin: 0 auto;
     position: relative;
     margin-bottom: 50px;
 }
-
-.proyecto::after {
-    content: "Proyecto";
+/* .proyecto::after */
+.proyecto img {
+    width: 100%;
+    border-radius: 50%;
+    /* width: 72px;
+    height: 105px;
+    object-fit: cover; */
+}
+.proyectoNombre {
+    /* content: "Proyecto"; */
     text-align: center;
     color: #333;
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -30px;
+    bottom: -40px;
     
 }
 
